@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "backend-takehome"
+version = "0.1.0"
+description = "A CLI tool to fetch research papers from PubMed."
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+packages = [{ include = "papers_fetcher" }]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.26.0"
+
+[tool.poetry.scripts]
+get-papers-list = "cli:main"
